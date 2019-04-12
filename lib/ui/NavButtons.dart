@@ -16,9 +16,7 @@ class _NavButtonsState extends State<NavButtons> {
     Button(Icons.list,false),
     Button(Icons.person_pin,false),
   ]
-  );
-
-  
+);  
 
   Widget showButton(Button butt){
     return Expanded(
@@ -40,10 +38,8 @@ class _NavButtonsState extends State<NavButtons> {
           );
   }
 
-
-
-  @override
-  Widget build(BuildContext context) {
+@override
+Widget build(BuildContext context) {
     return Container(
       child:Row(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -53,10 +49,8 @@ class _NavButtonsState extends State<NavButtons> {
           showButton(buttons.getButton(2)),
           showButton(buttons.getButton(3)),
           showButton(buttons.getButton(4)),
-
         ],
       ),
     );
   }
 }
-
